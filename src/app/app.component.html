@@ -1,0 +1,207 @@
+<!-- One way data binding -->
+<!-- interpolation -->
+<!-- <h2>{{title}}</h2>
+<h2>Hello {{name}}</h2>
+<p>Welcome to LivetechIndia</p>
+
+<h4>{{4+4}}</h4>
+<h3>{{a+b}}</h3>
+
+<h3>{{ a > 50}}</h3>
+<h1>{{name == "Prathmesh"}}</h1>
+
+<h4>Logical Operator {{true &&  true}}</h4>
+<app-login></app-login>
+
+<app-register></app-register> -->
+
+
+
+
+<!--
+
+
+
+ Html form template using id declaration
+<div class="container d-flex">
+  <div class="form m-4">
+    <label for="">Name</label>
+    <input type="text" placeholder="enter a name" #inp1> <br><br>
+
+    <label for="">Email</label>
+    <input type="email" placeholder="enter a mail id" #inp2> <br><br>
+
+    <label for="">Mobile No</label>
+    <input type="email" placeholder="enter a mobile no" #inp3> <br><br>
+
+    <label for="">Address</label><br>
+    <textarea cols="50" rows="4" #inp4></textarea>
+    <br><br>
+
+    <label for="">Password</label>
+    <input type="password" placeholder="enter a password" #inp5 (keyup)="valid(inp1.value,inp2.value, inp3.value, inp4.value, inp5.value)"> <br><br>
+
+    <button (click)="reg(inp1.value,inp2.value, inp3.value, inp4.value, inp5.value)"  [disabled]="dis">Submit</button>
+</div>
+
+  <div class="table">
+    <table class="m-4">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile No</th>
+        <th>Address</th>
+        <th>Password</th>
+      </tr>
+      <tr *ngFor="let data of regForm">
+        <td>{{data.Name}}</td>
+        <td>{{data.Email}}</td>
+        <td>{{data.MobileNo}}</td>
+        <td>{{data.Address}}</td>
+        <td>{{data.Password}}</td>
+      </tr>
+    </table>
+  </div>
+</div> -->
+
+
+<!-- Directive -->
+<!-- <h2 *ngIf="color == 'red'" style="color:red">
+  red
+</h2>
+
+<h2 *ngIf="color == 'green'" style="color:green">
+ Green
+</h2>
+
+<div class="para" *ngIf="status" >
+  <h2>Student Counslling</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam esse qui beatae impedit nesciunt dolorem facere, ex ullam similique ab labore, voluptate ut, facilis amet corporis obcaecati aliquam temporibus?</p>
+</div>
+
+<button (click)="toggle()">hide/show</button> -->
+
+
+<!-- *ngFor -->
+<!-- <h3>User Details</h3>
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+  <tr *ngFor="let data of users">
+    <td>{{data.user}}</td>
+    <td>{{data.passwd}}</td>
+  </tr>
+</table> -->
+
+
+<!-- Directives -- Component , Attribute, Strutural , Customize -->
+
+
+<!-- Two way data binding -->
+<!-- <div class="container mt-5">
+    <label for="">Data</label>
+    <input type="text" [(ngModel)]="usernm" >
+
+    <h3>{{usernm}}</h3>
+</div> -->
+
+
+<!-- Property Binding -->
+<!-- <div class="para" [style.background-color]="bgcolor" [style.display]="st">
+  <h2>Forward Classes</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto incidunt mollitia, quaerat delectus numquam dolor eius, earum unde debitis soluta atque, nam magni! Minus facere laudantium sunt cumque vero.</p>
+  <img [src]="imgurl" alt="" width="100%" height="350px">
+</div>
+
+<button (click)="showfun()">hs</button> -->
+
+
+<!-- Decorators --Parent to Child data sharing
+ -->
+<!-- <div class="form">
+  <label for="">Data</label>
+  <input type="text"  #inpdata>
+  <button (click)="sharedata(inpdata.value)">Submit</button>
+</div>
+
+
+<app-child1 [ParentData]="Data"></app-child1> -->
+
+
+<!-- Decorators --Child to Parent data sharing
+ -->
+
+ <!-- <h2>{{ChildData}}</h2>
+
+ <app-child1 (getChildEvent)="getData($event)"></app-child1> -->
+
+
+
+<!-- Structure directive
+   NgSwitch -->
+
+
+
+   <!-- <div [ngSwitch]="city">
+      <div class="para2" *ngSwitchCase="'IT Park'">Pune</div>
+      <div class="para3" *ngSwitchCase="'luxury'">Banglore</div>
+      <div class="para4" *ngSwitchCase="'life style'">Noida</div>
+      <div class="para1" *ngSwitchDefault>Mumbai</div>
+   </div> -->
+
+
+
+   <!-- Attribute Diretive  ngStyle  & ngClass   -->
+    <!-- <div [ngStyle]="mystyle"  [ngClass]="val">
+        <h3>Attribute Directive</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia magnam earum accusamus consequatur delectus! Ad nesciunt, tempora consequatur, explicabo repudiandae facilis quae laborum dolores saepe, provident autem adipisci facere minima.</p>
+    </div>
+
+    <button (click)="changestyle()">Change Style</button>
+    <button (click)="changeclass()">Change class</button> -->
+
+
+<!-- Event Handling -->
+<!-- <div class="container">
+  <button (click)="counter('+')">+</button>
+  <h3>{{num}}</h3>
+<button (click)="counter('-')">-</button>
+
+
+<div (mouseover)="showProject()" class="project" style="background-color: coral;height:100px;padding:20px">
+  <h3>Projects {{Project}}+</h3>
+</div>
+</div> -->
+
+
+<!-- Register Form -->
+<!-- <app-register></app-register> -->
+
+
+<!-- <app-template-driven-form></app-template-driven-form> -->
+
+<!-- <app-reactive-form></app-reactive-form> -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <app-header></app-header>
+  </div>
+  <div class="row">
+    <div class="col-2">
+        <app-aside></app-aside>
+    </div>
+    <div class="col-10" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row" appHover>
+    <app-footer></app-footer>
+  </div>
+</div>
+
+
+
+

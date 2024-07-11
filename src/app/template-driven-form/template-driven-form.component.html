@@ -1,0 +1,25 @@
+
+
+<!-- <form #templateForm="ngForm" (ngSubmit)="register(templateForm.value)"> -->
+  <form #templateForm="ngForm" >
+    <div class="inp1">
+      <label for="">Name</label>
+      <input type="text" name="Name" ngModel>
+    </div> <br>
+    <div class="inp2">
+      <label for="">Mobile</label>
+      <input type="number" name="Mobileno" ngModel>
+    </div> <br>
+    <div class="inp3">
+      <label for="">Email</label>
+      <input type="email" name="EmailId" ngModel>
+    </div> <br>
+    <div class="inp4">
+      <label for="">Address</label>
+      <textarea name="Address" ngModel cols="50" rows="5"></textarea>
+    </div> <br>
+
+    <button type="submit" (click)="register(templateForm.value)">Submit</button>
+    <button (click)="login()">Login</button>
+
+</form>

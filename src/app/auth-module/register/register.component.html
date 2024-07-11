@@ -1,0 +1,50 @@
+<form >
+  <h2>Registration Form</h2>
+  <div class="inpEle1">
+    <label for="">Name</label>
+    <input type="text" (keyup)="show(inp1.value,'name')" name="Name" #inp1>
+  </div> <br>
+  <div class="inpEle2">
+    <label for="">Email</label>
+    <input type="email" name="Email" (keyup)="show(inp2.value,'email')" #inp2>
+  </div> <br>
+  <div class="inpEle3">
+    <label for="">Mobile No</label>
+    <input type="number" name="MobileNo" (keyup)="show(inp3.value,'mobile')" #inp3>
+  </div> <br>
+  <div class="inpEle4">
+    <label for="">D.O.B</label>
+    <input type="date" name="DOB" (keyup)="show(inp4.value,'dob')" #inp4>
+  </div> <br>
+  <div class="inpEle5" >
+    <label for="">Gender</label> <br>
+    <label for="">Male</label>   <input type="radio"(click)="show(inp5.value,'gender')"  name="gender" value="Male" #inp5>
+    <label for="">Female</label> <input type="radio" (click)="show(inp7.value,'gender')" name="gender" value="Female" #inp7>
+  </div> <br>
+  <div class="inpEle6" (keyup)="show(inp6.value,'address')">
+    <label for="">Address</label> <br>
+    <textarea  name="Address" #inp6 cols="50" rows="4"></textarea>
+  </div> <br>
+
+  <button [disabled]="status" (click)="reg()">Sign Up</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

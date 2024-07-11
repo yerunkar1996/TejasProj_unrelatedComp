@@ -1,0 +1,13 @@
+header{
+  display: flex;
+  background-color: darkcyan;
+}
+nav ul{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+
+
+.sec1 h1{
+  color: aquamarine;
+}
+
+
+table,th,td{
+  /* display: inline; */
+  border: 2px solid blue;
+  border-collapse: collapse;
+  padding: 10px;
+}
+table{
+  margin-top: 10px;
+}
+
+th,td{
+  height: 20px;
+}
+.sec1{
+  color: turquoise;
+  background-color: coral;
+  padding: 30px;
+  text-align: center;
+}
+
+.para{
+  width: 50%;
+  font-size: 25px;
+  color: royalblue;
+}
+
+.items{
+  background-color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 2px 2px 5px green;
+  position: relative;
+  animation: slide 2s linear infinite;
+}
+@keyframes slide
+{
+  from{
+    width: 50%;
+  }
+  to{
+    width: 100%;
+    font-size: 20px;
+    background-color: yellowgreen;
+  }
+}

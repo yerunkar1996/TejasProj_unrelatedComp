@@ -1,0 +1,46 @@
+<style>
+  form{
+    width: 50%;
+    margin: auto;
+  }
+  span,sup{
+    color: red;
+  }
+</style>
+<h2>Registration Form</h2>
+<form  [formGroup]="rectiveFormData" (ngSubmit)="regForm()">
+  <div class="inp1">
+    <label for=""> <sup>*</sup>Name</label>
+    <input type="text" formControlName="Name"><br>
+    <span *ngIf="Name && Name.invalid && Name.touched">this is required</span>
+  </div> <br>
+  <div class="inp2">
+    <label for="">Age</label>
+    <input type="number" formControlName="age">
+  </div> <br>
+  <div class="inp3">
+    <label for=""> <sup>*</sup>Mobile</label>
+    <input type="number" formControlName="mobile"><br>
+    <span *ngIf="mobile && mobile.invalid && mobile.touched">this is required</span>
+  </div> <br>
+  <div class="inp4">
+    <label for=""> <sup>*</sup>Email </label>
+    <input type="email" formControlName="email"><br>
+    <span *ngIf="email && email.invalid && email.touched">this is required</span>
+  </div> <br>
+  <div class="inp5">
+    <label for=""> <sup>*</sup>Password</label>
+    <input type="text" formControlName="password"><br>
+    <span *ngIf="password && password.invalid && password.touched">this is required</span>
+  </div> <br>
+  <div class="inp6">
+    <label for="">D.O.B</label>
+    <input type="date" formControlName="dob">
+  </div> <br>
+  <div class="inp7">
+    <label for="">Address</label>
+    <textarea formControlName="address" cols="50" rows="4"></textarea><br>
+    <span *ngIf="address && address.invalid && address.touched">this is required</span>
+  </div> <br>
+  <button [disabled]="rectiveFormData.invalid">Submit</button>
+</form>
